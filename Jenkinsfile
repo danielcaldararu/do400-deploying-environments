@@ -19,7 +19,7 @@ sh '''
 archiveArtifacts 'target/*.jar'
 }
 }
-stage('Build Image') {
+  stage('Build Image') {
 environment { QUAY = credentials('danielcaldararu') }
 steps {
 sh '''
@@ -39,5 +39,6 @@ sh '''
 '''
 }
 }
+
 }
 }
