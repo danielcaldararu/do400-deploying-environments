@@ -20,7 +20,7 @@ archiveArtifacts 'target/*.jar'
 }
 }
 stage('Build Image') {
-environment { QUAY = credentials('QUAY_USER') }
+environment { QUAY = credentials('danielcaldararu') }
 steps {
 sh '''
 ./mvnw quarkus:add-extension \
